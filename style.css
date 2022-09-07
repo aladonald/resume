@@ -81,11 +81,15 @@ h6 {
         left: -300px;
     }
 
+    #header:active,
+    #header:hover {
+        left: 0;
+    }
+
 
     #main {
         margin-left: 0;
     }
-
 }
 
 
@@ -128,14 +132,14 @@ h6 {
 }
 
 .nav-menu a:hover,
-.nav-menu .active>a,
+.nav-menu :active>a,
 .nav-menu li:hover {
     text-decoration: none;
     color: white;
 }
 
 .nav-menu a:hover i,
-.nav-menu .active>a i,
+.nav-menu :active>a i,
 .nav-menu li:hover>a i {
     color: #149ddd;
 }
@@ -150,42 +154,35 @@ h6 {
     background: none;
     font-size: 18px;
     transition: all .4s;
-    outline: none !important;
+
     line-height: 1;
     cursor: pointer;
     text-align: right;
 
 }
 
+/* .mobile-nav-toggle:active {
+    left: 0;
+    z-index: 3000;
+} */
+
+
 .mobile-nav-toggle i {
     color: grey;
-}
-
-
-.mobile-nav-active {
-    overflow: hidden;
-}
-
-.mobile-nav-active #header {
-    left: 0;
-}
-
-.mobile-nav-toggle i :active #header {
-    left: 0;
 }
 
 .section-1 {
     height: 100vh;
     max-width: 1200px;
-
 }
 
 .new-one {
-   
+
     border-radius: 25px;
-    padding: 15px 15px;  
+    padding: 15px 15px;
 }
-.new-one:hover{
+
+.new-one:hover {
     background-color: #149ddd;
-    
+
 }
